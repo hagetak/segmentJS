@@ -25,15 +25,15 @@ exports.segment = function(n) {
 		return 0;
 	}
 	// flg -> func print_seg
-	seg = origin_num[n];
+	seg_num = origin_num[n];
 
-	for( i in seg ){
-		if(seg[i] === "1"){
-			str += obj[i]
+	for( loop_i in seg_num ){
+		if(seg_num[loop_i] === "1"){
+			str += obj[loop_i]
 		} else {
 			str += " ";
 		}
-		if((i % 3)== 0){
+		if((loop_i % 3)== 0){
 			str += "\n";
 		}
 	}
