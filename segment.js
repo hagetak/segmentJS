@@ -25,9 +25,9 @@ exports.segment = function(n) {
 		return 0;
 	}
 	// flg -> func print_seg
-	seg_num = origin_num[n];
+	var seg_num = origin_num[n];
 
-	for( loop_i in seg_num ){
+	for( var loop_i in seg_num ){
 		if(seg_num[loop_i] === "1"){
 			str += obj[loop_i]
 		} else {
